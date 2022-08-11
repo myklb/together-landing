@@ -1,0 +1,47 @@
+<html>
+  <head> 
+    <script type="text/javascript" src="/assets/scripts/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+      $(function(){
+          $('button').click(
+              function(){         
+                  $('#contact').show(100); 
+                  console.log("clicked");      
+              }
+          );
+          $('.close_button').click(
+              function(){         
+                  $('#contact').hide(100); 
+                  console.log("clicked");      
+              }
+          );
+      }
+      );
+      </script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="graphic_element one"></div>
+      <div class="graphic_element two"></div>
+      <div class="graphic_element three"></div>
+      <div class="graphic_element four"></div>
+      <div class="logo_container">
+        <img class="logo" src="/assets/images/logo.svg"/>
+      </div>
+      <div class="content_container">
+        <p class="header_text">Lorem ipsum dolor sit amet, singulis consequuntur delicatissimi nam id, pri sale quaeque et.</p>
+        <button class="button">Contact us</button>
+    </div>
+    <div class="contact_modal_container" id="contact">
+      <div class="contact_modal">
+        <div class="contact_modal_content">
+          <div class="close_button">X</div>
+
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0mGiRAg2Rg4a9Lkqx5_Ta7DCi0luYrEB7nJVZlV2WERwmsg/viewform?embedded=true" width="640" height="674" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
