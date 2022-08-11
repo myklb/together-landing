@@ -266,4 +266,24 @@ button:active {
 		padding: 24px 30px;
 		margin-top: 40px;
 	}
+	.contact_modal_content {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		height: 80%;
+		padding: 0;
+		background-color: white;
+	}
+	.close_button {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		height: 30px;
+		width: 30px;
+		font-size: 25px;
+		line-height: 31px;
+	}
 }
