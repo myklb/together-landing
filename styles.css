@@ -144,6 +144,7 @@ button:active {
 }
 
 .contact_modal_container {
+	z-index: 110;
 	display: none;
 }
 
