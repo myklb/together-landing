@@ -78,7 +78,7 @@ body {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
-	width: 100%;
+	width: 100vw;
 	padding-top: 20vh;
 }
 
@@ -146,6 +146,8 @@ button:active {
 .contact_modal_container {
 	z-index: 110;
 	display: none;
+	height: 100%;
+	width: 100%;
 }
 
 .contact_modal {
@@ -156,8 +158,8 @@ button:active {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	background-color: rgba(0,0,0,0.5)
 }
 
@@ -244,8 +246,7 @@ button:active {
 
 } */
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
 	.container {
 		padding-top: 10vh;
 
@@ -262,19 +263,14 @@ button:active {
 		font-size: 3em;
 	}
   .button {
-		font-size: 2.3em;
+		font-size: 2.5em;
 		padding: 24px 30px;
 		margin-top: 40px;
 	}
 	.contact_modal_content {
-		display: flex;
-		position: relative;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		width: 90%;
 		height: 80%;
-		padding: 0;
+		padding: 0px;
 		background-color: white;
 	}
 
@@ -287,5 +283,8 @@ button:active {
 		border-radius: 40px;
 		font-size: 70px;
 		line-height: 80px;
+	}
+	.copyright {
+		font-size: 24px;
 	}
 }
